@@ -1,5 +1,7 @@
 # Simultaneous Min Max Algorithm
-This repo presents a Python implementation of the Simultaneous Minimum and Maximum algorithm.
+This repo presents a Python implementation of the Simultaneous Minimum and Maximum algorithm. 
+
+This algorithm is an efficient technique for finding the minimum and maximum values in a array, optimizing the number of comparisons.
 
 [1. The recursion behind the algorithm](#the-recursion-behind-the-algorithm)
 
