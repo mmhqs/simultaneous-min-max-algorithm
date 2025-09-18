@@ -1,11 +1,11 @@
-# Simultaneous Min Max study
+# Simultaneous Min. Max. study
 In this file I tried to understand the recursion behind the Simultaneous Min Max algorithm before implementing it in Python or any other programming language.
 
 To explain the algorithm, I did a step by step diagram in Excalidraw. Check it out.
 
 Let's say we start with the list of numbers [1,2,3,4,5].
 
-<img width="500" alt="Min Max Algorithm" src="images/min-max-algorithm.png" />
+<img width="650" alt="Min Max Algorithm" src="images/min-max-algorithm.png" />
 
 This code uses a Divide and Conquer approach to find the minimum and maximum values in a list. Here's how it works, step by step:
 
