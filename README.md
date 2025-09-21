@@ -7,7 +7,7 @@ This algorithm is an efficient technique for finding the minimum and maximum val
 
 [2. How to run the project in Python 🐍](#how-to-run-the-project-in-python)
 
-[3. Algorithm analyses](#algorithm-analyses)
+[3. Algorithm analysis](#algorithm-analysis)
 
 ## The recursion behind the algorithm
 To understand the recursion behind the algorithm, I did some studying and compiled my research in the [min-max-study](docs/min-max-study.md) file.
