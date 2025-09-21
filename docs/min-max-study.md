@@ -5,7 +5,7 @@ To explain the algorithm, I did a step by step diagram in Excalidraw. Check it o
 
 Let's say we start with the list of numbers [1,2,3,4,5].
 
-<img width="650" alt="Min Max Algorithm" src="images/min-max-algorithm.png" />
+<img width="650" alt="Min Max Algorithm" src="/assets/min-max-algorithm.png" />
 
 This code uses a Divide and Conquer approach to find the minimum and maximum values in a list. Here's how it works, step by step:
 
