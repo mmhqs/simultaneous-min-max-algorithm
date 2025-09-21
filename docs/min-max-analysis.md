@@ -47,6 +47,34 @@ Conclusion: the total number of comparisons is `C(n)= 3n/2 ​− 2`. Therefore,
 ---
 
 ## Asymptotic complexity analysis using the Master Theorem
+1. Identification of parameters
+The general formula of the Master Theorem is `𝑇(n) = a * 𝑇 (n/b) + f(n)`. Comparing it with the recurrence of our algorithm (`𝑇(𝑛) = 2𝑇 * (𝑛 / 2) + 𝑂(1)` ), we have:
 
+- `a`: the number of subproblems in the recursion. In our case, the algorithm is divided into two halves, so `a = 2`.
+- `b`: the factor by which the size of the problem is reduced. Since the list is divided in half, `b = 2`.
+- `f(n)`: the cost of the division and combination work outside the recursive calls. The cost of dividing the list (finding the midpoint) and combining the results (two comparisons) is constant, so `f(n) = O(1)`.
 
+2. Calculating the critical exponent
+The next step is to calculate the value of `n^logb(a)`. This value serves to determine which case of the theorem applies.
 
+`logb(a) = log2(2) = 1`
+​
+Therefore, the value we compare with f(n) is `n^1 = n`.
+
+3. Determining the Master Theorem case
+Now, we compare `f(n)` with `n^logb(a)` to determine which of the three cases applies.
+
+- `f(n) = O(1)`
+- `n^logb(a) = n`
+
+Since `O(1)` is asymptotically smaller than `n`, the recurrence fits into Case 1 of the Master Theorem.
+
+4. Solution to the recurrence
+According to Case 1, if `f(n) = O(n^logb(a−ϵ))`, then the solution to the recurrence is `𝑇(n) = Θ(n^logb(a))`.
+
+`𝑇(n) = Θ(n^logb(a))`
+`𝑇(n) = Θ(n^log2(2))`
+`𝑇(n) = Θ(n^1)`
+`𝑇(n) = Θ(n)`
+​
+The asymptotic complexity of the MaxMin Select algorithm is `O(n)`. This means that the execution time grows linearly with the size of the list, making it a very efficient algorithm for this problem.
